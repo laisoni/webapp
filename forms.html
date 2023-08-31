@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Html Form</title>
+    
+</head>
+<body>
+    <section id="personal-info">
+        <center>
+            <h1>Our Form</h1>
+        </center>
+        <div class="form-control">
+            <form id="form">
+                <h1><span class="number">1</span> Customer Infomation</h1>
+                <br>
+                <input type="text" placeholder="Enter Full Name*" required autofocus>
+                <br>
+                <input type="email" placeholder="Enter Email*" required>
+                <br>
+                <input type="tel" placeholder="Enter Phone Number*" required pattern="[0-9]{10}">
+                <br>
+                <h1><span class="number">2</span> Shipping Details</h1>
+                <br>
+                <input type="text" placeholder="Enter Street Number and Name*" required>
+                <br>
+                <input type="text" placeholder="Enter Surburb*" required>
+                <br>
+                <input type="text" placeholder="Enter City*" required>
+                <label for="province">Province:</label>
+                <br>
+                <select name="province" id="province" required>
+                    <option value="Gauteng">Gauteng</option>
+                    <option value="Limpopo">Limpopo</option>
+                    <option value="Mpumalanga">Mpumalanga</option>
+                    <option value="Kwazulu-Natal">Kwazulu-Natal</option>
+                    <option value="Eastern Cape">Eastern Cape</option>
+                    <option value="Northen Cape">Northen Cape</option>
+                    <option value="Western cape">Western Cape</option>
+                    <option value="Free State">Free State</option>
+                    <option value="North West">North West</option>
+                </select>
+                <br>
+                <input type="number" placeholder="Enter Zip Code*" required pattern="[0-9] {4}">
+                <br>
+                <textarea name="instructions" id="instructions"  rows="10" placeholder="Special Instructions"></textarea>
+                <br>
+                <h1><span class="number">3</span> Billing Details</h1>
+                <br>
+                <input type="text" placeholder="Name on Card*" required>
+                <br>
+                <input type="number" placeholder="Credit Card Number*" required pattern="[0-9] {16}">
+                <br>
+                <input type="text" placeholder="Expiry Date*" required>
+                <br>
+                <input type="number"  placeholder="CVV*" required pattern="[0-9] {3}">
+                <br>
+
+                <div class="terms">
+                    <p>Do you agree to our <a href="#">Terms & Conditions</a></p>
+                    <br>
+                    <label for="yes">Yes</label><input type="checkbox" name="option" id="yes">
+                    <label for="no">No</label><input type="checkbox" name="option" id="no">
+                    <br>
+                    <button onclick="checkForm()">Ship Off!</button>
+                </div>
+
+
+
+            </form>
+        </div>
+    </section>
+    <script src="script.js"></script>
+   
+</body>
+</html>
